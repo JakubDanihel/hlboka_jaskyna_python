@@ -30,11 +30,11 @@ while True:
     else:
         pass #nerob nic, nedojde k zmene lavej strane
 
-    #upravenie medzery
+    #upravenie medzery v kazdom vykresleni programu. 
     diceRoll = random.randint(1, 6)
     if diceRoll == 1 and medzeraWidth > 1:
         medzeraWidth = medzeraWidth - 1 #zniz sirku medzery
     elif diceRoll == 2 and leftSirka + medzeraWidth < WIDTH - 1:
         medzeraWidth = medzeraWidth +1 #zvacsenie medzery o 1
     else:
-        pass
+        pass #nedojde k ziadnej zmene co sa tyka sirky jaskyne
